@@ -148,7 +148,7 @@ function cafremote()
 function deso_push()
 {
     local branch ssh_name path_opt proj
-    branch="mm6.0"
+    branch="n7.0"
     ssh_name="deso_review"
     path_opt=
 

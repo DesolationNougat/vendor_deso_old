@@ -35,7 +35,7 @@ endif
 
 # Desolation backuptool
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.desobackuptool.version=mm6.0
+    ro.desobackuptool.version=n7.0
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
@@ -95,10 +95,8 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     NovaLauncher \
-    DesolatedCore \
-    org.dirtyunicorns.utils \
-    KernelAdiutor
-#   DesolatedDelta
+#    KernelAdiutor
+#    DesolatedDelta
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -129,9 +127,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/deso/overlay/common
 
 # Versioning System
 # Desolation first version.
-PRODUCT_VERSION_MAJOR = 6.0.1
-PRODUCT_VERSION_MINOR = v1.0
-#PRODUCT_VERSION_MAINTENANCE = MM
+PRODUCT_VERSION_MAJOR = 7.0
+PRODUCT_VERSION_MINOR = v0.1
+#PRODUCT_VERSION_MAINTENANCE = N
 ifdef DESO_BUILD_EXTRA
     DESO_POSTFIX := -$(DESO_BUILD_EXTRA)
 endif
@@ -142,9 +140,9 @@ ifndef DESO_BUILD_TYPE
 endif
 
 # Set all versions
-DESO_VERSION := DesolationRom-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(DESO_BUILD_TYPE)$(DESO_POSTFIX)
-OTA_VERSION := DesolationRom-$(DESO_DEVICE)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(DESO_BUILD_TYPE)$(DESO_POSTFIX)
-DESO_MOD_VERSION := DesolationRom-$(DESO_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(DESO_BUILD_TYPE)$(DESO_POSTFIX)
+DESO_VERSION := Desolation-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(DESO_BUILD_TYPE)$(DESO_POSTFIX)
+OTA_VERSION := Desolation-$(DESO_DEVICE)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(DESO_BUILD_TYPE)$(DESO_POSTFIX)
+DESO_MOD_VERSION := Desolation-$(DESO_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(DESO_BUILD_TYPE)$(DESO_POSTFIX)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
@@ -152,8 +150,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.deso.otaversion=$(OTA_VERSION) \
     ro.modversion=$(DESO_MOD_VERSION) \
     ro.deso.buildtype=$(DESO_BUILD_TYPE)
-
-# DU Utils Library
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
 
