@@ -108,7 +108,8 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat \
     ntfsfix \
-    ntfs-3g
+    ntfs-3g \
+    static_busybox
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
