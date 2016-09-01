@@ -94,7 +94,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
-    NovaLauncher \
+    NovaLauncher
 #    KernelAdiutor
 #    DesolatedDelta
 
@@ -133,11 +133,14 @@ PRODUCT_VERSION_MINOR = v0.1
 #PRODUCT_VERSION_MAINTENANCE = N
 ifdef DESO_BUILD_EXTRA
     DESO_POSTFIX := -$(DESO_BUILD_EXTRA)
+else
+    DESO_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 endif
 
-ifndef DESO_BUILD_TYPE
+ifdef DESO_BUILD_TYPE
+    DESO_BUILD_TYPE := $(DESO_BUILD_TYPE)
+else
     DESO_BUILD_TYPE := PreRelease
-    DESO_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 endif
 
 # Set all versions
