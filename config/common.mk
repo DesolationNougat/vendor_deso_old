@@ -94,7 +94,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
-    NovaLauncher
+    NovaLauncher \
+    masquerade
 #    KernelAdiutor
 #    DesolatedDelta
 
