@@ -93,7 +93,8 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     NovaLauncher \
-    masquerade
+    masquerade \
+    substratum
 #    KernelAdiutor
 #    DesolatedDelta
 
