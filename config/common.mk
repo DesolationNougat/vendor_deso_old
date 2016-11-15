@@ -54,9 +54,9 @@ PRODUCT_COPY_FILES += \
     vendor/deso/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
 
 # superSU
-PRODUCT_COPY_FILES += \
-    vendor/deso/prebuilt/common/etc/SuperSU.zip:system/addon.d/SuperSU.zip \
-    vendor/deso/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+#PRODUCT_COPY_FILES += \
+#    vendor/deso/prebuilt/common/etc/SuperSU.zip:system/addon.d/SuperSU.zip \
+#    vendor/deso/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
