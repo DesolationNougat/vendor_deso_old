@@ -35,7 +35,7 @@ endif
 
 # Desolation backuptool
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.desobackuptool.version=n7.0
+    ro.desobackuptool.version=n
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
