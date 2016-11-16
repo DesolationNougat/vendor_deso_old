@@ -191,4 +191,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.deso.otaversion=$(OTA_VERSION) \
     ro.modversion=$(DESO_MOD_VERSION) \
     ro.deso.buildtype=$(DESO_BUILD_TYPE) \
-    net.tethering.noprovisioning=true
+    net.tethering.noprovisioning=true \
+    ro.substratum.verified=true
