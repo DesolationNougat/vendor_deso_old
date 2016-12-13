@@ -195,3 +195,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.deso.buildtype=$(DESO_BUILD_TYPE) \
     net.tethering.noprovisioning=true \
     ro.substratum.verified=true
+
+PRODUCT_OTA_PUBLIC_KEYS := vendor/deso/security/releasekey.x509.pem
